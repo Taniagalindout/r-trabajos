@@ -129,6 +129,7 @@ install.packages("dplyr")
 #Decir que lo vamos a usar
 library("dplyr")
 # Tipos de datos de cada cosa
+# Hace lo mismo que str
 glimpse(maraton)
 # Resumen de las columnas del archivo
 summary(maraton)
@@ -138,3 +139,25 @@ View(maraton)
 iris
 data()
 AirPassengers
+
+# Que es una observacion -> Lo equivalente a un registro
+# Que es una variable -> Lo equivalente a una columna
+
+
+# Ver datos de maraton
+# View
+# ejecutar la variable (maraton)
+
+# Determinada cantidad de observaciones
+# Los primeros de arriba (head)
+head(maraton)
+head(maraton, 3)
+
+# Los ultimos
+tail(maraton)
+tail(maraton, 3)
+
+install.packages("RWeka")
+
+
+
