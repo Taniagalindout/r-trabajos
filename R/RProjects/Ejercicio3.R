@@ -1,6 +1,6 @@
 setwd("C:\\Users\\CC7\\ArchivosP\\r-trabajos\\R\\RProjects")
 maraton <- read.csv("maraton_ny.csv")
-View()
+View(maraton)
 
 #Vectores
 a <- c(1,2,3,4,5,6)
@@ -117,3 +117,30 @@ inventario2
 # Quita los nombres
 invetario3 <- union(inventario,c('pera'=10))
 invetario3
+
+# Selección de elementos de un vector
+inventario[2]
+inventario[1:2]
+# Para seleccionar posiciones que no estan continuas
+inventario[c(1,3)]
+# - es una negación
+inventario[-3]
+inventario[-(2:3)]
+inventario['Manzana']
+
+#Para quitar un elemento especifico
+inventario <- inventario[-3]
+
+#Selección por filtrado
+inventario
+#Posiciones donde el valor sea menor a 10
+inventario[inventario<10]
+#Posiciones iguales a 6
+inventario[inventario ==6]
+# in es una condicion de pertenencia muestra los resultados que tengan ese valor
+inventario[inventario %in% c(2,3,6,30)]
+
+inventario[inventario %in% 2:30]
+
+#<pais><estado>Morelos</estado></pais>
+

@@ -122,6 +122,7 @@ names(maraton)
 # Estructura de cada columna
 str(maraton)
 # numero de filas
+# Longitud de una columna
 nrow(maraton)
 #instalar cosas
 #separados por coma, todos los paquetes
