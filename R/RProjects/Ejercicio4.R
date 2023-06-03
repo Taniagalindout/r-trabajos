@@ -70,3 +70,4 @@ View(house_rental)
 # encuentra entre 60000 y 80000
 sum(house_rental[house_rental$Price>60000 & house_rental$Price<80000,4])
 sum(house_rental[house_rental$Price>=60000 & house_rental$Price<=80000,4])
+
